@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Netlify Form Test</title>
+  </head>
+  <body>
+    <h1>This is the sample form below</h1>
+    <form action="POST" data-netlify="true">
+					<div class="fields">
+						<div class="field half">
+							<label for="demo-name">Name</label>
+							<input type="text" name="name" id="name" placeholder="Name" />
+						</div>
+						<div class="field half">
+							<label for="demo-email">Email</label>
+							<input type="email" name="email" id="email" placeholder="Email" />
+						</div>
+            <div class="field">
+              <textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+            </div>
+						<div class="field">
+							<input type="file" name="myfile" id="myfile" placeholder="Upload file" rows="7" />
+						</div>
+						<div class="field">
+							<div data-netlify-recaptcha="true">
+							</div>
+						</div>
+					</div>
+					<ul class="actions">
+						<li><input type="submit" value="Send Message" class="button primary"></li>
+					</ul>
+				</form>
+   </body>
+</html>
